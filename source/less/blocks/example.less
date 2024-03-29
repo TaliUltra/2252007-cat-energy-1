@@ -11,9 +11,10 @@
       to bottom,
       #ffffff 0,
       #ffffff 619px,
-      @lightgray 619px,
-      @lightgray 100%
+      rgba(234, 234, 234, 1) 619px,
+      rgba(234, 234, 234, 1) 100%
     );
+    position: relative;
   }
 
   // Desktop
@@ -25,6 +26,22 @@
       @lightgray 135px,
       @lightgray 100%
     );
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #e6e6e6;
+    height: 1px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    // Desktop
+    @media (min-width: @desktop-width) {
+      content: none;
+    }
   }
 }
 
@@ -44,7 +61,7 @@
   font-weight: 400;
   line-height: 40px;
   padding-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -52,7 +69,10 @@
     font-weight: 400;
     line-height: 60px;
     padding-top: 45px;
+    margin-top: 61px;
     margin-bottom: 60px;
+    margin-left: 1px;
+    position: relative;
   }
 
   // Desktop
