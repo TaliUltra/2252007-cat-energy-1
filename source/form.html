@@ -39,17 +39,17 @@
               />
               <source media="(min-width:768px)" srcset="img/logo-tablet.svg" />
               <img
-                class="main-header__logo--image"
+                class="main-header__logo-image"
                 src="img/logo-mobile.svg"
                 width="33"
                 height="38"
                 alt="Логотип магазина Cat Energy."
               />
             </picture>
-
             <!-- SVG -->
             <svg
-              class="main-header__logo--name logo-name__svg logo-name__top"
+              class="main-header__logo-name"
+              aria-label="Логотип магазина Cat Energy."
               width="101"
               height="18"
               viewBox="0 0 101 18"
@@ -210,8 +210,8 @@
               <h3 class="form__title form__title--contacts">
                 Контактные данные (владельца кота)
               </h3>
-              <div class="form__box form__box--contacts">
-                <div class="form__row form__row--contacts">
+              <ul class="form__box form__box--contacts">
+                <li class="form__row form__row--contacts">
                   <label class="form__label form__label--contacts" for="email"
                     >E-mail:*</label
                   >
@@ -233,8 +233,8 @@
                   >
                     <use xlink:href="img/sprite.svg#icon-email"></use>
                   </svg>
-                </div>
-                <div class="form__row form__row--contacts">
+                </li>
+                <li class="form__row form__row--contacts">
                   <label class="form__label form__label--contacts" for="phone"
                     >Телефон:*</label
                   >
@@ -256,8 +256,8 @@
                   >
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -387,7 +387,6 @@
     <!-- Footer -->
     <footer class="main-footer">
       <!-- Cooperation -->
-
       <section
         class="main-footer__cooperation cooperation cooperation--index cooperation--form"
       >
@@ -402,6 +401,7 @@
           </div>
         </div>
       </section>
+
       <!-- Map -->
       <section class="main-footer__map map">
         <h2 class="visually-hidden">Мы на карте</h2>
@@ -414,16 +414,18 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
+
       <!-- Logo Social -->
       <section class="main-footer__links links">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <div class="links__wrapper container">
           <div class="links__logo">
             <a class="links__logo-link" href="#">
-              <span class="links__logo-name logo-name">
+              <span class="links__logo-name logo__name">
                 <!-- Svg -->
                 <svg
-                  class="logo-name__svg logo-name__bottom"
+                  class="logo__name-svg logo__name-bottom"
+                  aria-label="Логотип магазина Cat Energy."
                   width="128"
                   height="25"
                   viewBox="0 0 101 18"
@@ -440,6 +442,7 @@
                   <!-- SVG -->
                   <svg
                     class="social__svg vk"
+                    aria-label="Вконтакте."
                     width="28"
                     height="22"
                     fill="#666666"
@@ -456,6 +459,7 @@
                   <!-- SVG -->
                   <svg
                     class="social__svg youtube"
+                    aria-label="Ютуб."
                     width="28"
                     height="22"
                     fill="#666666"
@@ -469,6 +473,7 @@
                   <!-- SVG -->
                   <svg
                     class="social__svg telegram"
+                    aria-label="Телеграм."
                     width="28"
                     height="22"
                     fill="#666666"
@@ -485,7 +490,13 @@
               href="https://up.htmlacademy.ru/adaptive-individual/1/demos/11307#75"
               >HTML Academy
               <!-- SVG -->
-              <svg class="copyright__svg" width="27" height="35" fill="#666666">
+              <svg
+                class="copyright__svg"
+                aria-label="Логотип HTML Academy."
+                width="27"
+                height="35"
+                fill="#666666"
+              >
                 <use xlink:href="img/sprite.svg#icon-academy"></use></svg
             ></a>
           </div>

@@ -366,6 +366,10 @@
 }
 
 .form__label {
+  margin-right: 14px;
+  display: flex;
+  align-items: center;
+
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -381,12 +385,6 @@
   }
 }
 
-.form__label--data {
-  display: flex;
-  align-items: center;
-  margin-right: 14px;
-}
-
 .form__control {
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
@@ -398,7 +396,7 @@
   border: 1px solid #e7e7e7;
   height: 42px;
   padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 44px;
   width: 120px;
   flex-grow: 1;
 
@@ -409,6 +407,7 @@
     font-weight: 400;
     line-height: normal;
     padding-left: 19px;
+    padding-right: 52px;
   }
 }
 
@@ -433,7 +432,7 @@
 }
 
 // For Firefox
-input[type="number"] {
+.form__control [type="number"] {
   appearance: textfield;
 }
 
@@ -599,8 +598,12 @@ input[type="number"] {
 
 // Contacts
 .form__box--contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -621,18 +624,12 @@ input[type="number"] {
   // Desktop
   @media (min-width: @desktop-width) {
     width: 570px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
 
 .form__row--contacts:last-child {
-  margin-bottom: 0;
-}
-
-.form__label--contacts {
-  margin-right: 14px;
-  display: flex;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
 .form__control-svg--email {
@@ -871,4 +868,16 @@ input[type="number"] {
 
 .form__control--invalid + .form__control-svg {
   stroke: @invalid;
+}
+
+.form__label:hover .form__control-mark {
+  border: 1px solid #bababa;
+}
+
+.form__label:active .form__control-mark {
+  opacity: 0.3;
+}
+
+.form__label:active .form__control-label {
+  color: rgba(34, 34, 34, 0.3);
 }

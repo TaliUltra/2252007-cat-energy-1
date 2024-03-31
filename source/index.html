@@ -25,6 +25,7 @@
       crossorigin="anonymous"
     />
   </head>
+
   <body class="page__body">
     <!-- Header -->
     <header class="main-header main-header--index">
@@ -38,7 +39,7 @@
               />
               <source media="(min-width:768px)" srcset="img/logo-tablet.svg" />
               <img
-                class="main-header__logo--image"
+                class="main-header__logo-image"
                 src="img/logo-mobile.svg"
                 width="33"
                 height="38"
@@ -47,7 +48,8 @@
             </picture>
             <!-- SVG -->
             <svg
-              class="main-header__logo--name logo-name__svg logo-name__top"
+              class="main-header__logo-name"
+              aria-label="Логотип магазина Cat Energy."
               width="101"
               height="18"
               viewBox="0 0 101 18"
@@ -136,17 +138,15 @@
           <ul class="system-list">
             <li class="system-list__item">
               <div class="system-list__item-case">
-                <div class="system-list__item-box">
-                  <!-- SVG -->
-                  <svg
-                    class="system-list__item-image system-list__item-image--loose"
-                    width="36"
-                    height="50"
-                    viewBox="0 0 36 50"
-                  >
-                    <use xlink:href="img/sprite.svg#icon-cat-loose"></use>
-                  </svg>
-                </div>
+                <!-- SVG -->
+                <svg
+                  class="system-list__item-image system-list__item-image--loose"
+                  width="36"
+                  height="50"
+                  viewBox="0 0 36 50"
+                >
+                  <use xlink:href="img/sprite.svg#icon-cat-loose"></use>
+                </svg>
                 <h3 class="system-list__item-title">похудение</h3>
               </div>
               <p class="system-list__description">
@@ -154,33 +154,27 @@
                 по деревьям? Пора на диету! Cat Energy Slim поможет вашему
                 питомцу сбросить лишний вес.
               </p>
-              <div class="system-list__button">
-                <a class="system-list__button-link" href="">каталог slim</a>
-              </div>
+              <a class="system-list__button-link" href="">каталог slim</a>
             </li>
 
             <li class="system-list__item">
-              <div class="system-list__item-case">
-                <div class="system-list__item-box system-list__item-box--gain">
-                  <!-- SVG -->
-                  <svg
-                    class="system-list__item-image system-list__item-image--gain"
-                    width="67"
-                    height="28"
-                    viewBox="0 0 134 56"
-                  >
-                    <use xlink:href="img/sprite.svg#icon-cat-gain"></use>
-                  </svg>
-                </div>
+              <div class="system-list__item-case system-list__item-case--gain">
+                <!-- SVG -->
+                <svg
+                  class="system-list__item-image system-list__item-image--gain"
+                  width="67"
+                  height="28"
+                  viewBox="0 0 134 56"
+                >
+                  <use xlink:href="img/sprite.svg#icon-cat-gain"></use>
+                </svg>
                 <h3 class="system-list__item-title">набор&nbsp;массы</h3>
               </div>
               <p class="system-list__description">
                 Заработать авторитет среди дворовых котов и даже собак? Серия
                 Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
               </p>
-              <div class="system-list__button">
-                <a class="system-list__button-link" href="">каталог pro</a>
-              </div>
+              <a class="system-list__button-link" href="">каталог pro</a>
             </li>
           </ul>
         </div>
@@ -397,10 +391,11 @@
         <div class="links__wrapper container">
           <div class="links__logo">
             <a class="links__logo-link" href="#">
-              <span class="links__logo-name logo-name">
+              <span class="links__logo-name logo__name">
                 <!-- Svg -->
                 <svg
-                  class="logo-name__svg logo-name__bottom"
+                  class="logo__name-svg logo__name-bottom"
+                  aria-label="Логотип магазина Cat Energy."
                   width="128"
                   height="25"
                   viewBox="0 0 101 18"
@@ -417,6 +412,7 @@
                   <!-- SVG -->
                   <svg
                     class="social__svg vk"
+                    aria-label="Вконтакте."
                     width="28"
                     height="22"
                     fill="#666666"
@@ -433,6 +429,7 @@
                   <!-- SVG -->
                   <svg
                     class="social__svg youtube"
+                    aria-label="Ютуб."
                     width="28"
                     height="22"
                     fill="#666666"
@@ -446,6 +443,7 @@
                   <!-- SVG -->
                   <svg
                     class="social__svg telegram"
+                    aria-label="Телеграм."
                     width="28"
                     height="22"
                     fill="#666666"
@@ -462,7 +460,13 @@
               href="https://up.htmlacademy.ru/adaptive-individual/1/demos/11307#75"
               >HTML Academy
               <!-- SVG -->
-              <svg class="copyright__svg" width="27" height="35" fill="#666666">
+              <svg
+                class="copyright__svg"
+                aria-label="Логотип HTML Academy."
+                width="27"
+                height="35"
+                fill="#666666"
+              >
                 <use xlink:href="img/sprite.svg#icon-academy"></use></svg
             ></a>
           </div>
