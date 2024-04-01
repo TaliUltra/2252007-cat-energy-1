@@ -4,14 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" href="favicon.ico" />
-    <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/favicons/icon-152.png" />
-    <!-- 180×180 -->
-    <link rel="manifest" href="manifest.webmanifest" />
-    <!-- Fonts -->
+    <!-- Preload -->
     <link
       rel="preload"
       href="/js/script.min.js"
@@ -20,10 +13,17 @@
     />
     <link
       rel="preload"
-      href="/img/bg-header@2x.jpg"
-      as="image"
+      href="/fonts/pt-sans-narrow.woff2"
+      as="font"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/icon-152.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
 
   <body class="page__body">
@@ -100,6 +100,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-1.webp    1x,
                         img/catalog-desktop-1@2x.webp 2x
@@ -178,6 +179,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-2.webp    1x,
                         img/catalog-desktop-2@2x.webp 2x
@@ -256,6 +258,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-3.webp    1x,
                         img/catalog-desktop-3@2x.webp 2x
@@ -334,6 +337,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-4.webp    1x,
                         img/catalog-desktop-4@2x.webp 2x
@@ -412,6 +416,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-5.webp    1x,
                         img/catalog-desktop-5@2x.webp 2x
@@ -490,6 +495,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-6.webp    1x,
                         img/catalog-desktop-6@2x.webp 2x
@@ -568,6 +574,7 @@
                   <picture>
                     <source
                       type="image/webp"
+                      media="(min-width:1300px)"
                       srcset="
                         img/catalog-desktop-7.webp    1x,
                         img/catalog-desktop-7@2x.webp 2x
