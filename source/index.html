@@ -31,6 +31,7 @@
     <header class="main-header main-header--index">
       <div class="main-header__wrapper main-header__wrapper--large">
         <div class="main-header__box">
+          <!-- Logo -->
           <a class="main-header__logo" href="">
             <picture>
               <source
@@ -105,6 +106,29 @@
             </a>
           </div>
           <picture>
+            <source
+              type="image/webp"
+              media="(min-width:1300px)"
+              srcset="
+                img/main-image-desktop.webp    1x,
+                img/main-image-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width:768px)"
+              srcset="
+                img/main-image-tablet.webp 1x,
+                main-image-tablet@2x.webp  2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/main-image-mobile.webp    1x,
+                img/main-image-mobile@2x.webp 2x
+              "
+            />
             <source
               media="(min-width:1300px)"
               srcset="
@@ -326,6 +350,21 @@
               </li>
               <li class="slider__item">
                 <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width:768px)"
+                    srcset="
+                      img/cat-tablet-after.webp    1x,
+                      img/cat-tablet-after@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/cat-mobile-after.webp    1x,
+                      img/cat-mobile-after@2x.webp 2x
+                    "
+                  />
                   <source
                     media="(min-width:768px)"
                     srcset="
