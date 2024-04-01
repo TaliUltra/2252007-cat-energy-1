@@ -51,5 +51,8 @@
   "type": "module",
   "volta": {
     "node": "16.20.2"
+  },
+  "dependencies": {
+    "browser-sync-client": "^2.27.9"
   }
 }

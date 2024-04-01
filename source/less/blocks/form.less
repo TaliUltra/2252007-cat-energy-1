@@ -546,6 +546,10 @@
   }
 }
 
+.form__control-radio:focus + span {
+  outline: 1px solid #5eaa2f;
+}
+
 .form__control-mark {
   position: absolute;
   left: 0;
@@ -765,6 +769,10 @@
 .form__control-checkbox:checked + span {
   background-image: url("../img/tick.svg");
   background-position: center;
+}
+
+.form__control-checkbox:focus + span {
+  outline: 1px solid #5eaa2f;
 }
 
 .form__control-mark--checkbox {
