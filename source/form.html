@@ -158,9 +158,9 @@
           <div class="form__container form__container-radio">
             <div class="form__wrapper form__wrapper--radio">
               <ul class="form__list form__list--radio">
-                <!-- При добавлении класса form__item--disabled и form__item--checked-disabled будет не активной-->
                 <li class="form__item form__item--checked">
                   <label class="form__label form__label--radio">
+                    <!-- При добавлении класса form__control-radio--disabled и form__control-radio--checked-disabled будет не активной-->
                     <input
                       class="form__control-radio visually-hidden"
                       name="radio"
@@ -172,9 +172,9 @@
                     <span class="form__control-label">похудение</span>
                   </label>
                 </li>
-                <!-- При добавлении класса form__item--disabled и form__item--checked-disabled будет не активной-->
                 <li class="form__item">
                   <label class="form__label form__label--radio">
+                    <!-- При добавлении класса form__control-radio--disabled и form__control-radio--checked-disabled будет не активной-->
                     <input
                       class="form__control-radio visually-hidden"
                       name="radio"
@@ -187,6 +187,7 @@
                 </li>
                 <li class="form__item form__item-last">
                   <label class="form__label form__label--radio">
+                    <!-- При добавлении класса form__control-radio--disabled и form__control-radio--checked-disabled будет не активной-->
                     <input
                       class="form__control-radio visually-hidden"
                       name="radio"
@@ -289,12 +290,12 @@
             <div class="form__case">
               <h3 class="form__title form__title--checkbox">Дополнительно</h3>
               <ul class="form__list form__list--checkbox">
-                <!-- При добавлении класса form__list-item--disabled и form__list-item--checked-disabled будет не активной-->
                 <li class="form__list-item form__list-item--checked">
                   <label
                     class="form__label form__label--checkbox"
                     for="sweetener"
                   >
+                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="sweetener"
@@ -311,9 +312,12 @@
                     >
                   </label>
                 </li>
-
                 <li class="form__list-item">
-                  <label class="form__label form__label--checkbox" for="water">
+                  <label
+                    class="form__label form__label--checkbox form__item--disabled"
+                    for="water"
+                  >
+                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="water"
@@ -329,9 +333,8 @@
                     >
                   </label>
                 </li>
-
                 <li class="form__list-item">
-                  <label class="form__label form__label--checkbox" for="milk">
+                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="milk"
@@ -353,6 +356,7 @@
                     class="form__label form__label--checkbox"
                     for="vitamins"
                   >
+                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="vitamins"
@@ -388,7 +392,7 @@
     <!-- Footer -->
     <footer class="main-footer">
       <!-- Cooperation -->
-      <section class="main-footer__cooperation cooperation cooperation--form">
+      <section class="main-footer__cooperation cooperation cooperation--index">
         <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
         <div class="cooperation__wrapper">
           <h3 class="cooperation__title">
@@ -400,7 +404,6 @@
           </div>
         </div>
       </section>
-
       <!-- Map -->
       <section class="main-footer__map map">
         <h2 class="visually-hidden">Мы на карте</h2>
@@ -413,8 +416,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </section>
-
-      <!-- Logo Social -->
+      <!-- Logo -->
       <section class="main-footer__links links">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <div class="links__wrapper container">
@@ -438,6 +440,8 @@
               </span>
             </a>
           </div>
+
+          <!-- Logo Social -->
           <div class="links__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -496,7 +500,7 @@
           <div class="links__copyright">
             <a
               class="copyright"
-              href="https://up.htmlacademy.ru/adaptive-individual/1/demos/11307#75"
+              href="https://htmlacademy.ru/intensive/adaptive"
               >HTML Academy
               <!-- SVG -->
               <svg
