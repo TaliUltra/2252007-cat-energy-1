@@ -17,6 +17,12 @@
       as="font"
       crossorigin="anonymous"
     />
+    <link
+      rel="preload"
+      href="/fonts/lato/Lato-Regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <!-- 32×32 -->
@@ -295,7 +301,7 @@
                     class="form__label form__label--checkbox"
                     for="sweetener"
                   >
-                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
+                    <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="sweetener"
@@ -317,7 +323,7 @@
                     class="form__label form__label--checkbox form__item--disabled"
                     for="water"
                   >
-                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
+                    <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="water"
@@ -334,7 +340,11 @@
                   </label>
                 </li>
                 <li class="form__list-item">
-                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
+                  <label
+                    class="form__label form__label--checkbox form__item--disabled"
+                    for="milk"
+                  >
+                    <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="milk"
@@ -356,7 +366,7 @@
                     class="form__label form__label--checkbox"
                     for="vitamins"
                   >
-                  <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
+                    <!-- При добавлении класса form__control-checkbox--disabled и form__control-checkbox--checked-disabled будет не активной-->
                     <input
                       class="form__control-checkbox visually-hidden"
                       name="vitamins"
@@ -392,7 +402,7 @@
     <!-- Footer -->
     <footer class="main-footer">
       <!-- Cooperation -->
-      <section class="main-footer__cooperation cooperation cooperation--index">
+      <section class="main-footer__cooperation cooperation cooperation--form">
         <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
         <div class="cooperation__wrapper">
           <h3 class="cooperation__title">
