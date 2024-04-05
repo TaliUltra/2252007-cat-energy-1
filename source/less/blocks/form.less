@@ -573,12 +573,6 @@
   border: 1px solid #bababa;
 }
 
-/* Radio Disabled */
-.form__control-radio--disabled,
-.form__control-radio--checked-disabled {
-  opacity: 0.3;
-}
-
 .form__control-radio[type="radio"] + .form__control-mark {
   border-radius: 50%;
 }
@@ -600,6 +594,11 @@
     top: 10px;
     left: 10px;
   }
+}
+
+/* Radio Disabled */
+.form__control-radio[type="radio"]:disabled ~ span {
+  opacity: 0.3;
 }
 
 // Contacts
@@ -778,6 +777,12 @@
 .form__control-checkbox:checked + span {
   background-image: url("../img/tick.svg");
   background-position: center;
+  background-size: 26px 26px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    background-size: 34px 34px;
+  }
 }
 
 .form__control-checkbox:focus + span {
@@ -796,14 +801,15 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
+    left: 0;
+    top: 1px;
     width: 39px;
     height: 39px;
   }
 }
 
 /* Checkbox Disabled */
-.form__control-checkbox--disabled,
-.form__control-checkbox--checked-disabled {
+.form__control-checkbox[type="checkbox"]:disabled ~ span {
   opacity: 0.3;
 }
 
